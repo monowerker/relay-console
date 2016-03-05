@@ -1,0 +1,14 @@
+{
+  "name": "relays",
+  "version": "0.0.1",
+  "description": "Abstracted GPIO API for connected relays",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Daniel Ericsson <monowerker@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "pi-gpio": "0.0.8"
+  }
+}
