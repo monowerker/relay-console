@@ -1,0 +1,24 @@
+<fieldset>
+  <legend>Relay Status</legend>
+  <form method="POST" action="relaytoggle">
+    <p>Relay #1: {{#if relay1.state }}
+      <input type="hidden" name="relay1" value="0" />
+      <span style="color: green;">On</span>
+      <input type="submit" value="Turn off" /> {{else }}
+      <input type="hidden" name="relay1" value="1" />
+      <span style="color: red;">Off</span>
+      <input type="submit" value="Turn on" /> {{/if }}
+    </p>
+  </form>
+  <form method="POST" action="relaytoggle">
+    <p>Relay #2: {{#if relay2.state }}
+      <input type="hidden" name="relay2" value="0" />
+      <span style="color: green;">On</span>
+      <input type="submit" value="Turn off" /> {{else }}
+      <input type="hidden" name="relay2" value="1" />
+      <span style="color: red;">Off</span>
+      <input type="submit" value="Turn on" /> {{/if }}
+    </p>
+  </form>
+</fieldset>
+</form>
